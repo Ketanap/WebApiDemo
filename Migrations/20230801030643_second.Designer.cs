@@ -11,8 +11,8 @@ using WebApiDemo.Models;
 namespace WebApiDemo.Migrations
 {
     [DbContext(typeof(ApiDBContext))]
-    [Migration("20230731032547_init")]
-    partial class init
+    [Migration("20230801030643_second")]
+    partial class second
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

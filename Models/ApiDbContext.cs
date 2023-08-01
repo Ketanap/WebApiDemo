@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 namespace WebApiDemo.Models
 {
-    public class ApiDBContect : DbContext
+    public class ApiDBContext : DbContext
     {
-        public ApiDBContect()
+        public ApiDBContext()
         { }
-        public ApiDBContect(DbContextOptions<ApiDBContect> options)
+        public ApiDBContext(DbContextOptions<ApiDBContext> options)
             : base(options)
         { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -16,7 +16,7 @@ namespace WebApiDemo.Models
                .SetBasePath(Directory.GetCurrentDirectory())
                .AddJsonFile("appsettings.json")
                .Build();
-            var connectionString = configuration.GetConnectionString("ApiCoreDBContect");
+            var connectionString = configuration.GetConnectionString("ApiCoreDBContext");
             optionsBuilder.UseSqlServer(connectionString);
         }
     }

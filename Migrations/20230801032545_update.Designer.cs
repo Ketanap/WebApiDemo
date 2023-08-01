@@ -11,8 +11,8 @@ using WebApiDemo.Models;
 namespace WebApiDemo.Migrations
 {
     [DbContext(typeof(ApiDBContext))]
-    [Migration("20230731032547_init")]
-    partial class init
+    [Migration("20230801032545_update")]
+    partial class update
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -87,17 +87,12 @@ namespace WebApiDemo.Migrations
             modelBuilder.Entity("WebApiDemo.Models.tblContact", b =>
                 {
                     b.HasOne("WebApiDemo.Models.tblUser", "User")
-                        .WithMany("Contacts")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("WebApiDemo.Models.tblUser", b =>
-                {
-                    b.Navigation("Contacts");
                 });
 #pragma warning restore 612, 618
         }

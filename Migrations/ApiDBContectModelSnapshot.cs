@@ -9,7 +9,7 @@ using WebApiDemo.Models;
 
 namespace WebApiDemo.Migrations
 {
-    [DbContext(typeof(ApiDBContect))]
+    [DbContext(typeof(ApiDBContext))]
     partial class ApiDBContectModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -84,17 +84,12 @@ namespace WebApiDemo.Migrations
             modelBuilder.Entity("WebApiDemo.Models.tblContact", b =>
                 {
                     b.HasOne("WebApiDemo.Models.tblUser", "User")
-                        .WithMany("Contacts")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("WebApiDemo.Models.tblUser", b =>
-                {
-                    b.Navigation("Contacts");
                 });
 #pragma warning restore 612, 618
         }

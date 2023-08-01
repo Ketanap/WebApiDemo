@@ -9,6 +9,6 @@ public class tblUser
     public string? Password{get;set;}
     public string? Address {get;set;}
     public string? Gender {get;set;}
-     public ICollection<tblContact> Contacts { get; set; }
+    
 
 }

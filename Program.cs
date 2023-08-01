@@ -8,7 +8,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<ApiDBContect>(options =>
+builder.Services.AddDbContext<ApiDBContext>(options =>
             options.UseSqlServer("Data Source=PCC-SERVER\\SQLEXPRESS;Initial Catalog=ApiDB;Integrated Security=true;Encrypt=False"));
 
 
