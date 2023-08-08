@@ -12,10 +12,10 @@ namespace WebApiDemo.Controllers
     [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
+        ApiDBContext context = new ApiDBContext();
         [HttpGet(Name = "GetUser")]
         public IEnumerable<tblUser> Get()
         {
-               var context = new ApiDBContext();
                return context.tblUser.ToList(); 
         }
         
@@ -23,7 +23,6 @@ namespace WebApiDemo.Controllers
         [HttpPost]
         public string SignUp(tblUser u)
         {
-            var context = new ApiDBContext();
             context.tblUser.Add (u);        
             context.SaveChanges();
             return "Success";
@@ -33,7 +32,6 @@ namespace WebApiDemo.Controllers
         [HttpPost]
         public string Login(VMLogin u)
         {
-            var context = new ApiDBContext();
             var udata= context.tblUser.Where (eu=>eu.Email ==u.Email && eu.Password ==u.Password ).FirstOrDefault();
             if(udata!=null)
             {
