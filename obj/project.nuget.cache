@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "k3rbiy0lI+prAvvHHmqpsop8y51oy5rEgGYT0pRDUVhQflVJfr3iwETFWBt9xMsUX6WS4B4rauvkz+oimsgD3A==",
+  "dgSpecHash": "wN7g03aALJ6ZCSc6WCqiF3YbVf22Y+h/9Qv7ZRqojeQ/Vv9BSDV7ds/xKPRzQvD4Mkh1XtyOr+AQMzM5JPYrjA==",
   "success": true,
   "projectFilePath": "E:\\user23\\colog\\WebApiDemo\\WebApiDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ketan\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Ketan\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Ketan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Ketan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.0\\microsoft.aspnetcore.authentication.jwtbearer.6.0.0.nupkg.sha512",
     "C:\\Users\\Ketan\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Ketan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Ketan\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
